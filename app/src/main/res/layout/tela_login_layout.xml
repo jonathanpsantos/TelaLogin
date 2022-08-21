@@ -14,8 +14,7 @@
         android:layout_height="100dp"
         android:src="@drawable/logo_insta"
         android:layout_marginTop="80dp"
-        android:layout_marginLeft="135dp"
-
+        android:layout_gravity="center"
         />
 
 
@@ -24,13 +23,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="120dp"
+        android:layout_marginLeft="10dp"
         />
 
     <EditText
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
+        android:layout_marginLeft="10dp"
         />
 
     <Button
@@ -42,19 +42,31 @@
 
         />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/criar_conta"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
 
-        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/criar_conta"
+            android:id="@+id/txt_criar_conta"
+            android:padding="50dp"
+            />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/esqueceu_a_senha"
+        <TextView
+            android:id="@+id/txt_esqueceu_senha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/esqueceu_a_senha"
+            android:layout_toRightOf="@+id/txt_criar_conta"
+            android:padding="50dp"
+            />
 
-        />
+
+    </RelativeLayout>
+
+
 
 
 </LinearLayout>
